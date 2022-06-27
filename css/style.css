@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  font-family: "Courier New", Courier, monospace;
+}
+
+html,
+body {
+  background-color: black;
+  height: 100%;
+  margin: 0;
+}
+
+.bodystyle {
+  display: grid;
+}
+.all {
+  min-height: 100%;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  position: sticky;
+  top: 0px;
+  margin-bottom: 60px;
+}
+
+.imagePhoto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 145px 800px 100px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Atardecer_en_Monumento_Natural_La_Portada.jpg/800px-Atardecer_en_Monumento_Natural_La_Portada.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  grid-template-areas: 
+  "headerindex headerindex"
+  "contentindex contentindex"
+  "footer footer"
+  ;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+
+.nav__list a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: antiquewhite;
+  margin-right: 2rem;
+  margin-left: 75px;
+}
+
+.indexheader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: headerindex;
+}
+
+.contentindex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: contentindex;
+}
+
+.body__title,
+.body_text {
+  color:antiquewhite;
+  text-align:justify;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 0.5rem transparent;
+  justify-content: center;
+}
+
+.main__bottom {
+  background-color: whitesmoke;
+  border: 5px solid whitesmoke;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.main__bottom:hover{
+  padding: 2px;
+  margin: 2px;
+}
+
+.Bottom_conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Bottom_conteiner {
+  background-color: whitesmoke;
+  padding: 5px;
+  border: 10px solid whitesmoke;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+  margin: 5px;
+}
+
+.presentation {
+  background-color: black;
+  text-align: center;
+}
+
+.presentation_title {
+  color: white;
+}
+
+.presentation_image {
+  text-align: center;
+  width: 30%;
+  height: 75%;
+}
+
+.presentation_text {
+  text-align: center;
+  color: white;
+}
+
+.presentation_data {
+  list-style: none;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.style_legend {
+  color: #000000;
+  padding: 5px;
+  border: 5px solid antiquewhite;
+  margin: 10px;
+}
+
+.bodytravelcontainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+
+  grid-template-areas:
+    "headertravel headertravel"
+    "alltravel alltravel"
+    "ttravelinicial ttravelinicial"
+    "travel_tittle travel_tittle"
+    "travel_places travel_places"
+    "travelstext travelstext"
+    "footer footer";
+}
+
+.headertravel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: headertravel;
+}
+
+.alltravel {
+  display: flex;
+  grid-area: alltravel;
+}
+
+.travel_tittle_inicial {
+  color: antiquewhite;
+  grid-area: ttravelinicial;
+  text-align: center;
+  margin: 50px;
+}
+.travel_tittle {
+  list-style: none;
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  grid-area: travel_tittle;
+  margin: 20px;
+}
+
+.travel_places {
+  color: antiquewhite;
+  text-align: left;
+  grid-area: travel_places;
+}
+
+.travels_text {
+  text-align: justify;
+  margin: 20px;
+  grid-area: travelstext;
+}
+
+.Bottom_conteiner_travel {
+  width: 100%;
+  text-align: center;
+}
+
+.Bottom_conteiner_travel .main__bottom {
+  background-color: whitesmoke;
+  padding: 10px;
+  border: 10px solid whitesmoke;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+.bodygalery {
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+  "headerstyle headerstyle"
+  "imagecontainer imagecontainer"
+  "footer footer"
+  ;
+}
+
+
+.headerstyle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: headerstyle;
+}
+
+.image_container{
+  display: flex;
+  grid-area: imagecontainer;
+  width: 100%;
+}
+
+
+.image_container_shop {
+  display: grid;
+  grid-template-columns: repeat(2);
+  grid-template-rows: repeat(2);
+  width: 100%;
+  height: 100%;
+}
+
+
+.price_tittle,
+.price_advice {
+  color: antiquewhite;
+  text-align: center;
+}
+
+.table {
+  color: antiquewhite;
+  text-align: center;
+  display: inline-block;
+  margin-left: 550px;
+  border: 50px;
+  padding: 50px;
+}
+
+.footer {
+  background-color: black;
+  text-align: center;
+  padding: 2px;
+  border: 2px solid black;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  grid-area: footer;
+}
+
+.footer__text {
+  color: antiquewhite;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 5px;
+}
+
+.footer__icons {
+  text-align: center;
+  display: inline-block;
+  width: 20px;
+  padding: 0.5px;
+  border: solid 0.5px;
+  margin: 0.5px;
+}

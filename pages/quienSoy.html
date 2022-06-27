@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/Camara.png" type="image/x-icon">
+    <title>Atmospheric-Visuals</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../img/Logo.jpg" alt="Atmospheric-Visuals-Logo" width="80" height="80">
+        </a>
+        <!--Nav-Bar-->
+        <nav>
+            <ul class="nav__list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="quienSoy.html">Quien Soy</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="viajes.html">Viajes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Presentacion-->
+    <section class="presentation">
+        <div class="presentation_title">
+            <h1>Me presento</h1>
+        </div>
+        <div>
+            <img class="presentation_image" src="../img/Presentacion_jere.jpeg" alt="Foto_presentacion">
+        </div>
+        <div class="presentation_text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aut recusandae assumenda nisi. Vel
+                molestias ad, praesentium sunt sed dolores quos? Animi esse quaerat, commodi quo corporis omnis
+                repellendus saepe!</p>
+        </div>
+        <!--Encuesta-->
+        <form action="">
+            <fieldset class="presentation_data">
+                <div class="style_legend">Ahora presentate tu.</div>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="Nombre">
+                <br />
+                <label for="Apellido">Apellido:</label>
+                <input type="text" name="Apellido" id="Apellido">
+                <div>
+                    <h4>Sexo</h4>
+                    <select name="Sexo" id="Sexo">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <h3>¿Donde me conociste?</h3>
+                <select name="¿Donde me conociste?" id="¿Donde me conociste?">
+                    <option value="Redes Sociales">Redes Sociales</option>
+                    <option value="Conocidos">Conocidos</option>
+                    <option value="Publicidad">Publicidad</option>
+                </select>
+                <br />
+                <label for="Mensaje">Contame mas sobre vos.</label>
+                <br />
+                <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"></textarea>
+                <br />
+                <div>Quiero compartir mi informacion.</div>
+                <input type="checkbox" name="acepta" value="1">
+                <br />
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </fieldset>
+        </form>
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer__text">
+            <h3>Redes Sociales</h3>
+        </div>
+        <div>
+            <img class="footer__icons" src="../img/facebook.png" alt="Facebook" width="20" height="20">
+            <img class="footer__icons" src="../img/twitter.png" alt="Twitter" width="20" height="20">
+            <img class="footer__icons" src="../img/instagram.png" alt="Instagram" width="20" height="20">
+        </div>
+    </footer>
+</body>
+
+</html>
