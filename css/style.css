@@ -237,7 +237,33 @@ header {
   "footer footer"
   ;
 }
+.imageStyle{
+  width: 90%;
+}
+/*Shop*/
+h2{
+  color: antiquewhite;
+  text-align: center;
+}
 
+.shopText{
+  color: antiquewhite;
+  text-align: center;
+}
+
+.card-img-top{
+  width:100%;
+  height: 100%;
+}
+
+.mb-3_5{
+  margin: 0.5rem;
+}
+
+
+.row{
+  justify-content:center;
+}
 
 .headerstyle {
   display: flex;
@@ -248,7 +274,6 @@ header {
 
 .image_container{
   display: flex;
-  grid-area: imagecontainer;
   width: 95%;
 }
 
@@ -261,21 +286,6 @@ header {
   height: 100%;
 }
 
-
-.price_tittle,
-.price_advice {
-  color: antiquewhite;
-  text-align: center;
-}
-
-.table {
-  color: antiquewhite;
-  text-align: center;
-  display: inline-block;
-  margin-left: 550px;
-  border: 50px;
-  padding: 50px;
-}
 
 .footer {
   background-color: black;
