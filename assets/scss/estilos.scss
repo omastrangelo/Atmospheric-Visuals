@@ -1,0 +1,36 @@
+//Variables
+$color-principal: black;
+$color-letra: whitesmoke;
+
+
+body{
+    background-color: $color-principal;
+}
+
+h1{
+    color: $color-letra;
+}
+
+h3{
+    color: $color-letra;
+}
+
+
+.alltravel{
+    h2 {
+        color: $color-letra;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h3 {
+        color: $color-letra;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    p{
+        color: $color-letra;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+
+}
