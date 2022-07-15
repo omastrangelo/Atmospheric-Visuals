@@ -1,36 +1,37 @@
-//Variables
-$color-principal: black;
-$color-letra: whitesmoke;
+//maps
+$tipo_letra: (
+    h1: "Verdana",
+    h2: "Arial",
+    p: "Tahoma"
 
+);
 
-body{
-    background-color: $color-principal;
-}
-
-h1{
-    color: $color-letra;
-}
-
-h3{
-    color: $color-letra;
-}
-
-
-.alltravel{
-    h2 {
-        color: $color-letra;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+@each $tipo-letra in $tipo_letra {
+    .font--#{tipo-letra} {
+        font-family: $tipo_letra;
     }
-
-    h3 {
-        color: $color-letra;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    p{
-        color: $color-letra;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
-    }
-
+    
 }
+
+//extend
+
+.main__bottom {
+    background-color: whitesmoke;
+    border: 5px solid whitesmoke;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  
+  .Bottom_conteiner_travel{
+      @extend .main__bottom;
+      transition: none;
+  }
+
+  //mixin
+
+  
