@@ -20,6 +20,21 @@ body {
   position: relative;
 }
 
+.imagePhoto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 145px 800px 100px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Atardecer_en_Monumento_Natural_La_Portada.jpg/800px-Atardecer_en_Monumento_Natural_La_Portada.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  grid-template-areas: 
+  "headerindex headerindex"
+  "contentindex contentindex"
+  "footer footer"
+  ;
+}
 .indexheader{
   display: flex;
   justify-content: space-between;
@@ -61,4 +76,34 @@ body {
 .contenedorBoton{
   display: flex;
   justify-content: right;
+}
+
+.footer {
+  background-color: black;
+  text-align: center;
+  padding: 2px;
+  border: 2px solid black;
+  width: 98%;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  grid-area: footer;
+}
+
+.footer__text {
+  color: antiquewhite;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 5px;
+}
+
+.footer__icons {
+  text-align: center;
+  display: inline-block;
+  width: 20px;
+  padding: 0.5px;
+  border: solid 0.5px;
+  margin: 0.5px;
 }
