@@ -20,6 +20,21 @@ body {
   position: relative;
 }
 
+.imagePhoto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 145px 800px 100px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Atardecer_en_Monumento_Natural_La_Portada.jpg/800px-Atardecer_en_Monumento_Natural_La_Portada.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  grid-template-areas: 
+  "headerindex headerindex"
+  "contentindex contentindex"
+  "footer footer"
+  ;
+}
 .indexheader{
   display: flex;
   justify-content: space-between;
