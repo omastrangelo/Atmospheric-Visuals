@@ -32,8 +32,7 @@ body {
   background-size: cover;
 }
 
-.body__title,
-.body_text {
+.body__title{
   color: antiquewhite;
   text-align: center;
   padding: 2rem;
@@ -41,6 +40,16 @@ body {
   border: 2rem transparent;
   justify-content: center;
 }
+
+.body_text {
+  color: antiquewhite;
+  text-align: justify;
+  padding: 2rem;
+  margin: 2rem;
+  border: 2rem transparent;
+  justify-content: center;
+}
+
 .main__bottom {
   background-color: #045de9;
   border: 3px solid transparent;
@@ -77,6 +86,7 @@ body {
   display: flex;
   justify-content: center;
   color: antiquewhite;
+  text-align: center;
 }
 
 .carouselImage {
@@ -98,6 +108,7 @@ body {
   color: antiquewhite;
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .contImage {
@@ -106,8 +117,9 @@ body {
 }
 
 .presentation_text {
+  text-align: justify;
+  margin: 2rem;
   color: antiquewhite;
-  text-align: center;
 }
 
 .presentation_image {
@@ -133,7 +145,7 @@ body {
 .shopText {
   color: antiquewhite;
   text-align: center;
-  margin: 0 2px 10px 2px;
+  margin: 0 2rem 2rem 2rem;
 }
 
 .card-img-top{
