@@ -80,9 +80,12 @@ body {
 }
 
 .carouselImage {
-  height: 450px;
+  height: 500px;
 }
 
+.carousel-inner{
+  height: 500px;
+}
 .headertravel {
   display: flex;
   justify-content: space-between;
